@@ -1,11 +1,15 @@
 console.log("Project Euler");
 
 const euler1 = (num) => {
+	let sum = 0;
+
 	for (let i = 1; i < num; i ++) {
 		if (i % 3 === 0 || i % 5 === 0) {
-			console.log(i);
+			sum += i;
 		}
 	};
+
+	return sum;
 };
 
-euler1(10);
+console.log(euler1(10));
