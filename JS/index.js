@@ -1,6 +1,6 @@
 console.log("Project Euler");
 
-
+// Problem 1
 const euler1 = (num) => {
 	// To add up the numbers that pass the following condition.
 	let sum = 0;
@@ -17,3 +17,10 @@ const euler1 = (num) => {
 };
 
 console.log(euler1(1000)); //233168
+
+// Problem 2
+
+const fib = () => {
+	// Starting values for Fibonacci sequence
+	const seeds = [1, 2];
+};
