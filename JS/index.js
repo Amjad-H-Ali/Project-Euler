@@ -19,12 +19,22 @@ const euler1 = (num) => {
 console.log(euler1(1000)); //233168
 
 // Problem 2
+let arr = [1, 2];
 
-const fib = (num) => {
-	if (num >= 10) {
-		return;
+const fib = () => {
+	const {length:len} = arr;
+
+	if (arr[len - 1] >= 10) {
+		return arr;
 	};
+
+	arr.push(arr[len - 1] + arr[len - 2]);
+
+	return fib();
+
 };
+
+console.log(fib());
 
 
 // Extra 
@@ -34,7 +44,7 @@ const fib2 = (n) => {
 		return 1;
 	}
 
-	return fib(n - 1) + fib(n - 2);
+	return fib2(n - 1) + fib2(n - 2);
 };
 
 console.log(fib2(4));
