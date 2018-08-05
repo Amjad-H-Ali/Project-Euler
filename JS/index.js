@@ -22,5 +22,6 @@ console.log(euler1(1000)); //233168
 
 const fib = () => {
 	// Starting values for Fibonacci sequence
-	const seeds = [1, 2];
+	let seeds = [1, 2];
+
 };
