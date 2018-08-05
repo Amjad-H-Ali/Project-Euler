@@ -20,9 +20,12 @@ console.log(euler1(1000)); //233168
 
 // Problem 2
 
-const fib = () => {
+const fib = (arr) => {
+
 	// Starting values for Fibonacci sequence
 	let seeds = [1, 2],
 		evenSum = 0;
+
+
 
 };
