@@ -20,15 +20,22 @@ console.log(euler1(1000)); //233168
 
 // Problem 2
 
-const fib = (limit) => {
+const fib = (num) => {
+	if (num >= 10) {
+		return;
+	};
+};
 
-	if (limit <= 1) {
+
+// Extra 
+const fib2 = (n) => {
+
+	if (n <= 1) {
 		return 1;
 	}
 
-	return fib(limit - 1) + fib(limit - 2);
-
+	return fib(n - 1) + fib(n - 2);
 };
 
-console.log(fib(4));
+console.log(fib2(4));
 
