@@ -22,7 +22,7 @@ console.log(euler1(1000)); //233168
 
 const fib = (limit) => {
 
-	
+	return fib(limit - 1) + fib(limit - 2);
 
 };
 
