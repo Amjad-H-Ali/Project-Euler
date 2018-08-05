@@ -22,22 +22,24 @@ console.log(euler1(1000)); //233168
 
 
 const fib = (arr) => {
+	// Destructuring length prop
 	const {length:len} = arr;
-
-	if (arr[len - 1] >= 10) {
-		return arr;
+	// Add all even ints when last elem in array is = to or > than 4 million 
+	if (arr[len - 1] >= 4e+6) {
+		let sum = 0;
+		arr.forEach(e => e % 2 === 0 ? sum += e : null);
+		return sum;
 	};
-
+	// Push sum of n-1 and n-2 into array
 	arr.push(arr[len - 1] + arr[len - 2]);
-
+	// Find fibonnaci seq to 4e6 using recursion
 	return fib(arr);
-
 };
-
+// Pass in seed number to start
 console.log(fib([1, 2]));
 
 
-// Extra 
+// **Extra** 
 const fib2 = (n) => {
 
 	if (n <= 1) {
